@@ -1,85 +1,59 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="PUROHIT COMPUTERS DENTHAL - ऑनलाइन फॉर्म, आधार, पैन, समग्र, आयुष्मान, बैंकिंग एवं डिजिटल सेवाएं।">
-<title>PUROHIT COMPUTERS DENTHAL</title>
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PUROHIT COMPUTERS DENTHAL | ऑनलाइन सेवाएं</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f5f7fb;color:#172033}
-header{background:linear-gradient(135deg,#0b4da2,#087fbd);color:#fff;padding:18px 6%;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px #0002}
-.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-weight:800;font-size:21px}.nav a{color:#fff;text-decoration:none;margin-left:15px;font-size:14px}
-.hero{padding:70px 6%;background:linear-gradient(135deg,#eaf5ff,#fff);text-align:center}.hero h1{font-size:38px;margin:5px 0;color:#0b4da2}.hero p{font-size:18px;color:#4b5563}.btn{display:inline-block;padding:13px 22px;border-radius:9px;text-decoration:none;font-weight:700;margin:6px}.wa{background:#18a957;color:#fff}.call{background:#0b4da2;color:#fff}
-.container{max-width:1100px;margin:auto;padding:45px 6%}h2{text-align:center;color:#0b4da2;margin-bottom:28px}.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#fff;padding:22px;border-radius:14px;box-shadow:0 3px 15px #1d35571a;border:1px solid #e8edf5}.card h3{margin:0 0 8px;color:#173b73}.card p{margin:0;color:#596579;line-height:1.5}
-.about{background:#fff}.contact{background:#eef7ff}.contactbox{background:#fff;border-radius:15px;padding:25px;max-width:650px;margin:auto;text-align:center;box-shadow:0 3px 15px #1d35571a}.contactbox p{font-size:17px;line-height:1.8}
-footer{background:#10233f;color:#fff;text-align:center;padding:25px}.tag{font-weight:bold;color:#ffe08a}
-.float{position:fixed;right:18px;bottom:18px;background:#18a957;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 15px #0004}
-@media(max-width:700px){.nav a{display:none}.hero{padding:50px 5%}.hero h1{font-size:29px}.hero p{font-size:16px}.container{padding:35px 5%}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f5f8fc;color:#172033}.top{background:#082d60;color:white;text-align:center;padding:7px;font-size:13px}header{background:white;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0001}.nav{max-width:1150px;margin:auto;padding:13px 5%;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:900;color:#082d60;font-size:19px}nav a{margin-left:16px;color:#263d5c;font-weight:bold;font-size:14px}.hero{background:linear-gradient(135deg,#e8f4ff,#fff);padding:55px 5%;text-align:center}.hero h1{font-size:40px;color:#082d60;margin:10px 0}.hero h1 span{color:#0871c9}.hero p{color:#596579;font-size:18px}.tag{color:#0871c9;font-weight:bold}.btn,.wa{display:inline-block;padding:12px 19px;border-radius:9px;font-weight:bold;margin:5px;text-decoration:none}.btn{background:#0871c9;color:#fff}.wa{background:#159447;color:#fff}.wrap{max-width:1150px;margin:auto;padding:50px 5%}h2{text-align:center;color:#082d60;font-size:30px;margin-bottom:10px}.sub{text-align:center;color:#69758a;margin-bottom:28px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}.card{background:#fff;border:1px solid #e4eaf2;border-radius:16px;padding:21px;box-shadow:0 5px 18px #12385b0b}.special{border:2px solid #0871c9;background:linear-gradient(180deg,#fff,#eef8ff)}.icon{font-size:33px}.card h3{color:#173c6d;min-height:52px;margin:8px 0}button{border:0;background:#eef6ff;color:#0863b1;padding:11px 14px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}.details{display:none;margin-top:16px;border-top:1px solid #e7edf5;padding-top:13px}.details ul{padding-left:20px;margin-top:5px}.details li{margin:7px 0;color:#4e5d72;font-size:14px}.contact{background:#fff;text-align:center}footer{background:#071d3d;color:#dbe9f8;text-align:center;padding:25px}.float{position:fixed;right:16px;bottom:16px;background:#159447;color:#fff;padding:13px 18px;border-radius:50px;font-weight:bold;z-index:20;box-shadow:0 5px 18px #0004}@media(max-width:700px){nav{display:none}.hero h1{font-size:30px}h2{font-size:26px}}
 </style>
-</head>
-<body>
-<header>
-<div class="nav">
-<div class="brand">💻 PUROHIT COMPUTERS</div>
-<div><a href="#services">सेवाएं</a><a href="#about">हमारे बारे में</a><a href="#contact">संपर्क</a></div>
-</div>
-</header>
+<style>
+/* चलती हुई दुकान की ब्रांड पट्टी */
+.moving-brand{
+  background:#082d60;color:#fff;overflow:hidden;white-space:nowrap;
+  padding:8px 0;font-weight:900;font-size:15px;
+}
+.moving-brand .track{
+  display:inline-block;padding-left:100%;
+  animation:brandmove 13s linear infinite;
+}
+@keyframes brandmove{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
-<section class="hero">
-<div class="container">
-<div style="font-size:50px">💻</div>
-<h1>PUROHIT COMPUTERS, DENTHAL</h1>
-<p>ऑनलाइन एवं डिजिटल सेवाओं के लिए आपका भरोसेमंद केंद्र</p>
-<p class="tag">आपके दस्तावेज़ का सच्चा साथी</p>
-<a class="btn wa" href="https://wa.me/917389370593?text=नमस्ते%20Purohit%20Computers,%20मुझे%20ऑनलाइन%20सेवा%20की%20जानकारी%20चाहिए।" target="_blank">💬 WhatsApp करें</a>
-<a class="btn call" href="tel:+917389370593">📞 अभी कॉल करें</a>
-</div>
-</section>
+/* Kotak special blinking highlight */
+.kotak-banner{
+  background:linear-gradient(90deg,#fff4b8,#ffffff,#fff4b8);
+  border:2px solid #e0a800;color:#6b4b00;text-align:center;
+  padding:12px 10px;font-weight:900;animation:kotakblink 1.25s ease-in-out infinite;
+}
+.kotak-banner span{margin:0 7px}
+@keyframes kotakblink{
+  0%,100%{opacity:1;box-shadow:0 0 0 rgba(224,168,0,0)}
+  50%{opacity:.55;box-shadow:0 0 18px rgba(224,168,0,.65)}
+}
+.special{
+  animation:specialpulse 1.5s ease-in-out infinite;
+}
+@keyframes specialpulse{
+  0%,100%{box-shadow:0 5px 18px #12385b0b}
+  50%{box-shadow:0 0 22px rgba(224,168,0,.5)}
+}
+@media(max-width:700px){
+  .moving-brand{font-size:13px}.kotak-banner{font-size:13px}
+}
+</style>
+</head><body>
+<div class="top">📞 संपर्क: 7389370593 • PUROHIT COMPUTERS, DENTHAL</div>
 
-<section id="services" class="container">
-<h2>हमारी प्रमुख सेवाएं</h2>
-<div class="services">
-<div class="card"><h3>🪪 आधार सेवा</h3><p>आधार e-KYC, अपडेट एवं संबंधित ऑनलाइन सेवाएं।</p></div>
-<div class="card"><h3>📄 PAN Card</h3><p>आधार से PAN आवेदन, e-PAN डाउनलोड एवं संबंधित सेवाएं।</p></div>
-<div class="card"><h3>👨‍👩‍👧 समग्र सेवा</h3><p>समग्र e-KYC, नया नाम जोड़ना, DOB/नाम सुधार आदि।</p></div>
-<div class="card"><h3>🏥 आयुष्मान कार्ड</h3><p>पात्रता जांच एवं आयुष्मान कार्ड संबंधी सेवाएं।</p></div>
-<div class="card"><h3>🏦 बैंकिंग सेवा</h3><p>बैंक खाता, बैंक स्टेटमेंट एवं डिजिटल बैंकिंग सहायता।</p></div>
-<div class="card"><h3>💸 AEPS / Money Transfer</h3><p>AEPS कैश विड्रॉल एवं मनी ट्रांसफर संबंधी सेवाएं।</p></div>
-<div class="card"><h3>🗳️ Voter ID</h3><p>वोटर आईडी आवेदन एवं ऑनलाइन सुधार संबंधी सेवाएं।</p></div>
-<div class="card"><h3>🖨️ Print & Online Work</h3><p>प्रिंट, फोटो कॉपी, स्कैनिंग एवं ऑनलाइन फॉर्म भरने की सुविधा।</p></div>
-<div class="card"><h3>💳 Recharge & Bill Payment</h3><p>मोबाइल, DTH रिचार्ज एवं बिजली बिल भुगतान की सुविधा।</p></div>
-<div class="card"><h3>📋 सरकारी योजनाएं</h3><p>विभिन्न सरकारी योजनाओं एवं ऑनलाइन आवेदन में सहायता।</p></div>
-</div>
-</section>
+<div class="moving-brand"><div class="track">
+💻 PUROHIT COMPUTERS, DENTHAL • आपके दस्तावेज़ का सच्चा साथी • ऑनलाइन सेवा • आधार • PAN • समग्र • बैंकिंग • डिजिटल सेवाएं •
+</div></div>
+<header><div class="nav"><div class="brand">💻 PUROHIT COMPUTERS</div><nav><a href="#">होम</a><a href="#services">सेवाएं</a><a href="#contact">संपर्क</a></nav></div></header>
+<section class="hero"><div class="wrap" style="padding-top:10px;padding-bottom:10px"><div>📍 DENTHAL • MANASA • NEEMUCH (M.P.)</div><h1>PUROHIT COMPUTERS <span>DENTHAL</span></h1><p>ऑनलाइन, दस्तावेज़, बैंकिंग एवं डिजिटल सेवाओं के लिए आपका भरोसेमंद केंद्र।</p><p class="tag">आपके दस्तावेज़ का सच्चा साथी</p><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 WhatsApp करें</a><a class="btn" href="tel:+917389370593">📞 अभी कॉल करें</a></div></section>
 
-<section id="about" class="about">
-<div class="container">
-<h2>हमारे बारे में</h2>
-<p style="text-align:center;max-width:760px;margin:auto;line-height:1.8;color:#596579">
-PUROHIT COMPUTERS, DENTHAL पर विभिन्न ऑनलाइन, दस्तावेज़, बैंकिंग और डिजिटल सेवाओं में सहायता उपलब्ध है।
-हमारा उद्देश्य आसान, तेज़ और भरोसेमंद डिजिटल सेवा प्रदान करना है।
-</p>
+<div class="kotak-banner">
+🏦 <span>विशेष सेवा:</span>
+✨ <span>कोटक महिंद्रा बैंक</span> ✨
+<span>⚡ 2 घंटे में खाता चालू • 💰 जीरो बैलेंस • 💳 ATM • 📘 चेकबुक</span>
 </div>
-</section>
-
-<section id="contact" class="contact">
-<div class="container">
-<h2>संपर्क करें</h2>
-<div class="contactbox">
-<p><strong>🏢 PUROHIT COMPUTERS, DENTHAL</strong><br>
-📍 Denthal, Tehsil Manasa, District Neemuch, Madhya Pradesh<br>
-📞 <a href="tel:+917389370593">7389370593</a></p>
-<a class="btn wa" href="https://wa.me/917389370593?text=नमस्ते%20Purohit%20Computers,%20मुझे%20आपकी%20सेवा%20चाहिए।" target="_blank">WhatsApp पर संपर्क करें</a>
-<a class="btn call" href="tel:+917389370593">कॉल करें</a>
-</div>
-</div>
-</section>
-
-<footer>
-© 2026 PUROHIT COMPUTERS, DENTHAL<br>
-<span class="tag">आपके दस्तावेज़ का सच्चा साथी</span>
-</footer>
-
+<section id="services"><div class="wrap"><h2>हमारी सभी सेवाएं</h2><p class="sub">किसी भी सेवा पर <b>“और सेवाएं देखें”</b> दबाकर पूरी जानकारी देखें।</p><div class="grid"><article class="card"><div class="icon">🪪</div><h3>आधार कार्ड सेवाएं</h3><button onclick="openService(1)">और सेवाएं देखें →</button><div class="details" id="d1"><ul><li>पिता का नाम अपडेट</li><li>पति का नाम अपडेट</li><li>पता अपडेट</li><li>नाम में सुधार</li><li>जन्मतिथि में सुधार</li><li>मोबाइल नंबर अपडेट</li><li>ई-मेल अपडेट</li><li>आधार ई-केवाईसी</li><li>आधार डाउनलोड</li><li>आधार प्रिंट</li><li>आधार में दस्तावेज़ अपडेट</li><li>आधार स्थिति जांच</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">📄</div><h3>पैन कार्ड सेवाएं</h3><button onclick="openService(2)">और सेवाएं देखें →</button><div class="details" id="d2"><ul><li>नया पैन कार्ड बनवाना</li><li>नाम में सुधार</li><li>जन्मतिथि में सुधार</li><li>पिता के नाम में सुधार</li><li>अन्य जानकारी में सुधार</li><li>खोया हुआ पैन कार्ड प्राप्त करना</li><li>ई-पैन डाउनलोड करना</li><li>पैन कार्ड स्थिति जांचना</li><li>पैन-आधार लिंक संबंधी सहायता</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">👨‍👩‍👧</div><h3>समग्र आईडी सेवाएं</h3><button onclick="openService(3)">और सेवाएं देखें →</button><div class="details" id="d3"><ul><li>परिवार में नया सदस्य जोड़ना</li><li>सदस्य की जानकारी में सुधार</li><li>समग्र ई-केवाईसी</li><li>नाम में सुधार</li><li>जन्मतिथि में सुधार</li><li>पिता/पति का नाम सुधार</li><li>पता अपडेट</li><li>मोबाइल नंबर अपडेट</li><li>परिवार की जानकारी में सुधार</li><li>समग्र 2.0 संबंधी सेवाएं</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">🏥</div><h3>आयुष्मान कार्ड सेवाएं</h3><button onclick="openService(4)">और सेवाएं देखें →</button><div class="details" id="d4"><ul><li>आयुष्मान कार्ड की पात्रता जांच</li><li>आयुष्मान कार्ड बनवाना</li><li>आयुष्मान कार्ड डाउनलोड</li><li>आयुष्मान कार्ड प्रिंट</li><li>परिवार के सदस्य की पात्रता जांच</li><li>आयुष्मान कार्ड संबंधी ऑनलाइन सहायता</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">🗳️</div><h3>वोटर आईडी सेवाएं</h3><button onclick="openService(5)">और सेवाएं देखें →</button><div class="details" id="d5"><ul><li>नया वोटर कार्ड बनवाना</li><li>नाम में सुधार</li><li>जन्मतिथि में सुधार</li><li>पता परिवर्तन</li><li>मोबाइल नंबर अपडेट</li><li>फोटो/जानकारी में सुधार</li><li>वोटर कार्ड डाउनलोड</li><li>वोटर कार्ड की स्थिति जांच</li><li>वोटर लिस्ट में नाम जांचना</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">🏦</div><h3>बैंकिंग सेवाएं</h3><button onclick="openService(6)">और सेवाएं देखें →</button><div class="details" id="d6"><ul><li>नया बैंक खाता खुलवाने में सहायता</li><li>बैंक स्टेटमेंट निकालना</li><li>बैंक स्टेटमेंट की पीडीएफ</li><li>पासबुक संबंधी सहायता</li><li>एटीएम/डेबिट कार्ड संबंधी सहायता</li><li>चेकबुक के लिए आवेदन</li><li>मोबाइल बैंकिंग संबंधी सहायता</li><li>यूपीआई संबंधी सहायता</li><li>बैंक केवाईसी संबंधी सहायता</li><li>बैंकिंग फॉर्म भरना</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">💸</div><h3>एईपीएस एवं मनी ट्रांसफर</h3><button onclick="openService(7)">और सेवाएं देखें →</button><div class="details" id="d7"><ul><li>आधार से पैसे निकालना</li><li>बैलेंस जांच</li><li>मिनी स्टेटमेंट</li><li>पैसे ट्रांसफर करना</li><li>घरेलू मनी ट्रांसफर</li><li>आधार आधारित बैंकिंग सहायता</li><li>लेन-देन संबंधी सहायता</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">📱</div><h3>मोबाइल एवं बिल भुगतान</h3><button onclick="openService(8)">और सेवाएं देखें →</button><div class="details" id="d8"><ul><li>मोबाइल रिचार्ज</li><li>डीटीएच रिचार्ज</li><li>बिजली बिल भुगतान</li><li>अन्य बिल भुगतान</li><li>रिचार्ज की स्थिति जांच</li><li>भुगतान संबंधी सहायता</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">📝</div><h3>ऑनलाइन फॉर्म सेवाएं</h3><button onclick="openService(9)">और सेवाएं देखें →</button><div class="details" id="d9"><ul><li>सरकारी भर्ती के फॉर्म</li><li>छात्रवृत्ति फॉर्म</li><li>कॉलेज/विश्वविद्यालय फॉर्म</li><li>परीक्षा फॉर्म</li><li>प्रवेश फॉर्म</li><li>सरकारी योजनाओं के आवेदन</li><li>ऑनलाइन आवेदन</li><li>फॉर्म में सुधार</li><li>आवेदन की स्थिति जांच</li><li>प्रवेश पत्र डाउनलोड</li><li>परीक्षा परिणाम डाउनलोड</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">🖨️</div><h3>प्रिंट, स्कैन एवं फोटो कॉपी</h3><button onclick="openService(10)">और सेवाएं देखें →</button><div class="details" id="d10"><ul><li>ब्लैक एंड व्हाइट प्रिंट</li><li>कलर प्रिंट</li><li>फोटो कॉपी</li><li>दस्तावेज़ स्कैन</li><li>पीडीएफ बनाना</li><li>पीडीएफ जोड़ना</li><li>पीडीएफ अलग करना</li><li>फोटो का आकार बदलना</li><li>पासपोर्ट साइज फोटो</li><li>ऑनलाइन दस्तावेज़ अपलोड</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">📸</div><h3>फोटो एवं दस्तावेज़ सेवाएं</h3><button onclick="openService(11)">और सेवाएं देखें →</button><div class="details" id="d11"><ul><li>पासपोर्ट साइज फोटो</li><li>फोटो का बैकग्राउंड बदलना</li><li>फोटो का आकार बदलना</li><li>हस्ताक्षर का आकार बदलना</li><li>दस्तावेज़ की पीडीएफ बनाना</li><li>साफ एवं स्पष्ट पीडीएफ बनाना</li><li>अलग-अलग दस्तावेज़ों की अलग पीडीएफ</li><li>व्हाट्सऐप/ई-मेल पर दस्तावेज़ भेजना</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">🏠</div><h3>सरकारी योजना सेवाएं</h3><button onclick="openService(12)">और सेवाएं देखें →</button><div class="details" id="d12"><ul><li>प्रधानमंत्री आवास योजना</li><li>लाड़ली बहना योजना</li><li>छात्रवृत्ति योजना</li><li>विभिन्न सरकारी योजनाओं की पात्रता जांच</li><li>ऑनलाइन आवेदन</li><li>आवेदन की स्थिति जांच</li><li>योजना संबंधी सहायता</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">📋</div><h3>प्रमाण-पत्र सेवाएं</h3><button onclick="openService(13)">और सेवाएं देखें →</button><div class="details" id="d13"><ul><li>आय प्रमाण-पत्र</li><li>जाति प्रमाण-पत्र</li><li>मूल निवासी प्रमाण-पत्र</li><li>ईडब्ल्यूएस प्रमाण-पत्र</li><li>अन्य ऑनलाइन प्रमाण-पत्र</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card"><div class="icon">🎓</div><h3>शिक्षा संबंधी सेवाएं</h3><button onclick="openService(14)">और सेवाएं देखें →</button><div class="details" id="d14"><ul><li>परीक्षा फॉर्म</li><li>कॉलेज प्रवेश फॉर्म</li><li>छात्रवृत्ति</li><li>अंकसूची डाउनलोड</li><li>परीक्षा परिणाम</li><li>प्रवेश पत्र</li><li>विश्वविद्यालय के फॉर्म</li><li>दस्तावेज़ सत्यापन संबंधी ऑनलाइन सहायता</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article><article class="card special"><div class="icon">🏦</div><h3>कोटक महिंद्रा बैंक – विशेष सेवाएं</h3><button onclick="openService(15)">और सेवाएं देखें →</button><div class="details" id="d15"><ul><li>⚡ 2 घंटे में खाता चालू करने में सहायता</li><li>💰 जीरो बैलेंस खाते की सुविधा</li><li>💳 एटीएम / डेबिट कार्ड की सुविधा</li><li>📘 चेकबुक की सुविधा</li><li>📱 मोबाइल बैंकिंग</li><li>🔐 यूपीआई सुविधा</li><li>📄 बैंक स्टेटमेंट</li><li>🏦 बैंक खाता खोलने में सहायता</li><li>🔄 बैंकिंग संबंधी ऑनलाइन सेवाएं</li><li>📋 बैंक केवाईसी संबंधी सहायता</li></ul><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 इस सेवा के लिए WhatsApp करें</a></div></article></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><h2>अभी संपर्क करें</h2><p>अपनी जरूरत बताएं और सेवा की जानकारी प्राप्त करें।</p><a class="wa" href="https://wa.me/917389370593" target="_blank">💬 WhatsApp</a><a class="btn" href="tel:+917389370593">📞 7389370593</a></div></section>
+<footer>© 2026 PUROHIT COMPUTERS, DENTHAL<br><b>आपके दस्तावेज़ का सच्चा साथी</b></footer>
 <a class="float" href="https://wa.me/917389370593" target="_blank">💬 WhatsApp</a>
-</body>
-</html>
+<script>function openService(n){var d=document.getElementById('d'+n);var open=d.style.display==='block';document.querySelectorAll('.details').forEach(function(x){x.style.display='none'});if(!open){d.style.display='block';setTimeout(function(){d.scrollIntoView({behavior:'smooth',block:'nearest'})},50)}}</script>
+</body></html>
