@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUROHIT COMPUTERS | Service Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">PC</div><div><b>PUROHIT COMPUTERS</b><small>DENTHAL • आपके दस्तावेज़ का सच्चा साथी</small></div></div>
+  <nav><a href="#home">Home</a><a href="#services">Services</a><a href="#apply">Apply</a><a href="#track">Track</a><button id="adminBtn">Admin</button></nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <span class="badge">ONLINE SERVICE PORTAL</span>
+    <h1>आपकी ऑनलाइन सेवाएँ,<br><strong>एक ही जगह</strong></h1>
+    <p>PUROHIT COMPUTERS, DENTHAL पर अपनी सेवा के लिए आवेदन करें और Application Number से status देखें।</p>
+    <div class="actions"><a class="btn primary" href="#apply">📝 सेवा के लिए आवेदन करें</a><a class="btn" href="#track">🔍 Application Track करें</a></div>
+  </div>
+  <div class="hero-card"><div class="big">📋</div><h3>आसान आवेदन</h3><p>आवेदन करें • Status देखें • काम पूरा होने पर जानकारी पाएँ</p></div>
+</section>
+
+<section id="services" class="section">
+  <div class="section-head"><div><span class="badge">OUR SERVICES</span><h2>हमारी सेवाएँ</h2></div></div>
+  <div id="serviceCards" class="grid"></div>
+</section>
+
+<section id="apply" class="section light">
+  <div class="section-head"><div><span class="badge">NEW APPLICATION</span><h2>सेवा के लिए आवेदन करें</h2></div></div>
+  <form id="applyForm" class="form-card">
+    <div class="grid two">
+      <label>नाम *<input id="name" required placeholder="पूरा नाम"></label>
+      <label>मोबाइल नंबर *<input id="mobile" required inputmode="numeric" maxlength="10" placeholder="10 अंकों का मोबाइल"></label>
+    </div>
+    <label>सेवा चुनें *<select id="service" required></select></label>
+    <label>अतिरिक्त जानकारी<textarea id="notes" rows="4" placeholder="जरूरी जानकारी लिखें"></textarea></label>
+    <label>दस्तावेज़ का नाम / विवरण<input id="docs" placeholder="जैसे Aadhaar, PAN आदि"></label>
+    <button class="btn primary" type="submit">आवेदन जमा करें</button>
+    <div id="applyResult"></div>
+  </form>
+</section>
+
+<section id="track" class="section">
+  <div class="section-head"><div><span class="badge">TRACK STATUS</span><h2>आवेदन की स्थिति देखें</h2></div></div>
+  <form id="trackForm" class="track-box">
+    <input id="trackId" required placeholder="Application No. जैसे PC-2026-000001">
+    <button class="btn primary">Check Status</button>
+  </form>
+  <div id="trackResult"></div>
+</section>
+</main>
+
+<div id="adminModal" class="modal hidden">
+  <div class="modal-card">
+    <button class="close" id="closeAdmin">×</button>
+    <div id="loginView">
+      <span class="badge">ADMIN</span><h2>Admin Login</h2>
+      <p class="muted">Demo password: <b>1234</b></p>
+      <input id="adminPassword" type="password" placeholder="Password">
+      <button id="loginBtn" class="btn primary full">Login</button>
+      <div id="loginError" class="error"></div>
+    </div>
+    <div id="dashboardView" class="hidden">
+      <div class="dash-head"><div><span class="badge">DASHBOARD</span><h2>Admin Dashboard</h2></div><button id="logoutBtn" class="btn">Logout</button></div>
+      <div id="stats" class="stats"></div>
+      <div class="table-wrap"><table><thead><tr><th>Application</th><th>Customer</th><th>Service</th><th>Date</th><th>Status</th><th>Action</th></tr></thead><tbody id="appTable"></tbody></table></div>
+    </div>
+  </div>
+</div>
+
+<footer>© 2026 PUROHIT COMPUTERS, DENTHAL • आपके दस्तावेज़ का सच्चा साथी</footer>
+<script src="app.js"></script>
+</body>
+</html>
